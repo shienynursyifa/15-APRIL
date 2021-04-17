@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+   .mustache{
+    width: 180px ; 
+    height: 180px ;
+    left: 100px ;
+    border-radius: 50% ;
+    position: absolute;
+    color: black;
+    box-shadow:
+        150px 240px 0 0 CurrentColor,
+        300px 240px 0 0 CurrentColor;
+    }
+    .mustache::before {
+    content: "" ;
+    position: absolute;
+    left: 30px;
+    top: 189.5px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px CurrentColor;
+    border-radius:0 0 0 100%;
+    transform : rotate(-40deg);
+    transform-origin: rigth 210px;
+    }
+    .mustache::after{
+    content: "" ;
+    position: absolute;
+    left: 390px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px CurrentColor;
+    border-radius:0 0  100%;
+    transform : rotate(40deg);
+    transform-origin: left 210px;
+    }
+ </style>
+
+</head>
+<body>
+    <div class= "mustache"></div>
+    <div class="mustache before"></div>
+    <div class="mustache after"></div>
+</body>
+</html>
+
